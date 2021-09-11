@@ -43,14 +43,6 @@ module.exports = ({ mongoose, modelName, env }, IdentitySettings, RegistrySettin
       }
       next()
     })
-    // #2 Save session relation in publicKey
-    SessionSchema.post('save', function(session) {
-      if (this.publicKey) {
-        PublicKey.findByIdAndUpdate(this.publicKey, { session })
-                 .then(publicKey => {})
-                 .catch(err => console.error(err))
-      }
-    })
     Session = mongoose.model(modelName, SessionSchema)
   }
 
