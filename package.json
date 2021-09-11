@@ -19,6 +19,7 @@
     "mongoose": "^6.0.5",
     "v4ex-api-core": "github:v4ex/v4ex-api-core",
     "v4ex-api-identity": "github:v4ex/v4ex-api-identity",
+    "v4ex-api-key": "github:v4ex/v4ex-api-key",
     "v4ex-api-password": "github:v4ex/v4ex-api-password",
     "v4ex-api-register": "github:v4ex/v4ex-api-register"
   }

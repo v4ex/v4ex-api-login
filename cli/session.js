@@ -1,6 +1,6 @@
 /* Copyright (c) V4EX Inc. SPDX-License-Identifier: GPL-3.0-or-later */
 
-// Purpose: Provide CLI command session to control Session in database.
+// Purpose: Provide CLI command Session to control Session in database.
 
 
 /**
@@ -18,12 +18,14 @@
     Session.base.connection.close()
   }
 
-  program.command('session')
+  program.command('Session')
          .description('control Session model in database')
          .option('--drop', 'Drop Session model collection in database')
          .action(function(options) {
            if (options.drop) {
              Session.collection.drop(done)
+           } else {
+             done()
            }
          })
 
