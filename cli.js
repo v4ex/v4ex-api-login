@@ -5,7 +5,7 @@
 
 const { program } = require('commander')
 require('./cli/login')({})
-// require('./cli/session')({})
+require('./cli/session')({})
 
 
 program.parse()
