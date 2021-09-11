@@ -1,0 +1,25 @@
+{
+  "name": "v4ex-api-login",
+  "version": "1.0.0-alpha",
+  "description": "V4EX API System: Login microservice.",
+  "repository": "github:v4ex/v4ex-api-login",
+  "author": "V4EX Inc. <v4ex-api-login@v4ex.com> (https://v4ex.com/)",
+  "contributors": [
+    "Xuwei Li <v4ex-api-login@xuwei.li> (https://xuwei.li/)"
+  ],
+  "license": "GPL-3.0",
+  "bin": {
+    "v4ex-api-login": "./cli.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chalk": "^4.1.2",
+    "commander": "^8.2.0",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.0.5",
+    "v4ex-api-core": "github:v4ex/v4ex-api-core",
+    "v4ex-api-identity": "github:v4ex/v4ex-api-identity",
+    "v4ex-api-password": "github:v4ex/v4ex-api-password",
+    "v4ex-api-register": "github:v4ex/v4ex-api-register"
+  }
+}
